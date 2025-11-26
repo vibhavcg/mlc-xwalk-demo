@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/mlc-xwalk-demo/:/",
-    "/content/mlc-xwalk-demo/configuration:/.helix/config.json",
-    "/content/mlc-xwalk-demo/metadata:/metadata.json"
+    "/content/mlc-xwalk-cg-demo/:/",
+    "/content/mlc-xwalk-cg-demo/configuration:/.helix/config.json",
+    "/content/mlc-xwalk-cg-demo/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/mlc-xwalk-demo/"
+    "/content/mlc-xwalk-cg-demo/"
   ]
 }
