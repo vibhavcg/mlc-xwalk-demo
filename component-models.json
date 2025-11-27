@@ -215,7 +215,29 @@
         "name": "rows",
         "value": "",
         "label": "Rows"
-      }
+      },
+        {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Columns Theme / Style Selection",
+        "description": "The Columns Style Selection",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Image Text Columns",
+            "value": "image-text-col"
+          },
+          {
+            "name": "Green",
+            "value": "bg-green"
+          },
+          {
+            "name": "Blue",
+            "value": "bg-blue"
+          }
+        ]
+        }
     ]
   },
   {
