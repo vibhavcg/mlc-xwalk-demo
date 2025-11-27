@@ -148,6 +148,18 @@
           {
             "name": "Nav Tools",
             "value": "nav-tools"
+          },
+          {
+            "name": "Light Gray",
+            "value": "light-gray"
+          },
+          {
+            "name": "Yellow CTA",
+            "value": "cta-yellow"
+          },
+          {
+            "name": "Center Align Text",
+            "value": "centeralign"
           }
         ]
       }
@@ -292,6 +304,28 @@
         "value": "",
         "label": "Sticky Bar Text column 2",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "icon-text",
+    "fields": [
+      {
+        "component": "text",
+        "name": "name",
+        "label": "Icon Text",
+        "description": "Icon Text Component"
+      },
+      {
+        "component": "multiselect",
+        "name": "style",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Highlight",
+            "value": "highlight"
+          }
+        ]
       }
     ]
   }

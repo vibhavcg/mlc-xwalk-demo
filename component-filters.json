@@ -48,5 +48,15 @@
       "button",
       "title"
     ]
+  },
+  {
+    "id": "icon-text",
+    "components": [
+      "hero",
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
   }
 ]
