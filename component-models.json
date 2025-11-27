@@ -136,6 +136,18 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Nav Brand",
+            "value": "nav-brand"
+          },
+          {
+            "name": "Nav Sections",
+            "value": "nav-sections"
+          },
+          {
+            "name": "Nav Tools",
+            "value": "nav-tools"
           }
         ]
       }
