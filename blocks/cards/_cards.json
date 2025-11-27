@@ -33,6 +33,33 @@
   ],
   "models": [
     {
+      "id": "cards",
+      "fields": [
+        {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Cards Theme / Style Selection",
+        "description": "The Card Style Selection",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Horizontal",
+            "value": "horizontal"
+          },
+          {
+            "name": "Green",
+            "value": "bg-green"
+          },
+          {
+            "name": "Blue",
+            "value": "bg-blue"
+          }
+        ]
+        }
+      ]
+    },
+    {
       "id": "card",
       "fields": [
         {
