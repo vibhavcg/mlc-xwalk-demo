@@ -10,7 +10,11 @@ footer .footer > div {
 }
 
 footer .footer p {
+  font-size: 14px;
+  line-height: 1.5;
   margin: 0;
+  padding-top: 20px;
+  color:rgba(0, 0, 0, 0.6);
 }
 
 @media (width >= 900px) {
