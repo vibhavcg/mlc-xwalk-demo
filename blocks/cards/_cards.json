@@ -37,8 +37,10 @@
       "fields": [
         {
           "component": "multiselect",
-          "name": "style",
+          "name": "classes",
           "label": "Style",
+          "description": "The quote background color",
+          "valueType": "string",
           "options": [
             {
               "name": "Horizontal",

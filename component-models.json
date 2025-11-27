@@ -157,20 +157,22 @@
     "id": "cards",
     "fields": [
       {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
-        "options": [
-          {
-            "name": "Horizontal",
-            "value": "horizontal"
-          },
-          {
-            "name": "Important Updates",
-            "value": "important-updates"
-          }
-        ]
-      }
+          "component": "multiselect",
+          "name": "classes",
+          "label": "Style",
+          "description": "The quote background color",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Horizontal",
+              "value": "horizontal"
+            },
+            {
+              "name": "Important Updates",
+              "value": "important-updates"
+            }
+          ]
+        }
     ]
   },
   {
