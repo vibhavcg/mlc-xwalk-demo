@@ -39,5 +39,14 @@
       "button",
       "title"
     ]
+  },
+  {
+    "id": "sticky-bar",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
   }
 ]
