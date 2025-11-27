@@ -234,14 +234,14 @@
         "component": "richtext",
         "name": "text",
         "value": "",
-        "label": "Text",
+        "label": "Sticky Bar Text column 1",
         "valueType": "string"
       },
       {
         "component": "richtext",
         "name": "text2",
         "value": "",
-        "label": "Text2",
+        "label": "Sticky Bar Text column 2",
         "valueType": "string"
       }
     ]
