@@ -393,6 +393,37 @@
           { "name": "Dark Background", "value": "bg-dark" },
           { "name": "Accent Background", "value": "bg-accent" }
         ]
+      },
+      {
+        "component": "repeatable",
+        "name": "items",
+        "label": "Link Items",
+        "fields": [
+          {
+            "component": "text",
+            "name": "linkText",
+            "label": "Link Text",
+            "valueType": "string",
+            "description": "The visible text for the link"
+          },
+          {
+            "component": "text",
+            "name": "linkUrl",
+            "label": "Link URL",
+            "valueType": "string",
+            "description": "Destination URL for the link"
+          },
+          {
+            "component": "multiselect",
+            "name": "classes",
+            "label": "Style",
+            "options": [
+              { "name": "Primary", "value": "primary" },
+              { "name": "Secondary", "value": "secondary" },
+              { "name": "Inline", "value": "inline" }
+            ]
+          }
+        ]
       }
     ]
   }
