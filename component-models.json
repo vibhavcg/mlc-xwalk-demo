@@ -312,19 +312,71 @@
     "fields": [
       {
         "component": "text",
-        "name": "name",
-        "label": "Icon Text",
-        "description": "Icon Text Component"
+        "name": "blockTitle",
+        "label": "Block Title",
+        "value": "",
+        "description": "Optional heading for the Icon Text block"
       },
       {
         "component": "multiselect",
         "name": "classes",
         "label": "Style",
         "options": [
+          { "name": "Highlight", "value": "highlight" },
+          { "name": "Light Background", "value": "bg-light" },
+          { "name": "Dark Background", "value": "bg-dark" },
+          { "name": "Accent Background", "value": "bg-accent" }
+        ]
+      },
+      {
+        "component": "repeatable",
+        "name": "items",
+        "label": "Icon Text Items",
+        "fields": [
           {
-            "name": "Highlight",
-            "value": "highlight"
+            "component": "image",
+            "name": "icon",
+            "label": "Icon",
+            "valueType": "string",
+            "description": "Upload or select an icon image"
+          },
+          {
+            "component": "text",
+            "name": "title",
+            "label": "Title",
+            "valueType": "string",
+            "description": "Short title for this item"
+          },
+          {
+            "component": "richtext",
+            "name": "description",
+            "label": "Description",
+            "valueType": "string",
+            "description": "Detailed description text"
+          },
+          {
+            "component": "select",
+            "name": "category",
+            "label": "Category",
+            "valueType": "string",
+            "options": [
+              { "name": "General", "value": "general" },
+              { "name": "Features", "value": "features" },
+              { "name": "Benefits", "value": "benefits" }
+            ]
           }
+        ]
+      },
+      {
+        "component": "select",
+        "name": "filter",
+        "label": "Filter by Category",
+        "valueType": "string",
+        "options": [
+          { "name": "All", "value": "all" },
+          { "name": "General", "value": "general" },
+          { "name": "Features", "value": "features" },
+          { "name": "Benefits", "value": "benefits" }
         ]
       }
     ]
