@@ -377,11 +377,6 @@
     "id": "links",
     "fields": [
       {
-        "component": "text",
-        "name": "blockTitle",
-        "label": "Block Title"
-      },
-      {
         "component": "multiselect",
         "name": "classes",
         "label": "Style",
