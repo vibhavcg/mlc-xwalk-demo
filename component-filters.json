@@ -47,8 +47,6 @@
     "id": "sticky-bar",
     "components": [
       "text",
-      "image",
-      "button",
       "title"
     ]
   },
@@ -72,7 +70,6 @@
     "components": [
         "text", 
         "title", 
-        "columns",
         "richtext"
       ]
   }
