@@ -60,7 +60,7 @@
   {
     "id": "links",
     "components": [
-      "card"
+      "text"
     ]
   }
 ]
