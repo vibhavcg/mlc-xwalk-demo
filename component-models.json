@@ -372,5 +372,28 @@
         ]
       }
     ]
+  },
+  {
+    "id": "links",
+    "fields": [
+      {
+        "component": "text",
+        "name": "blockTitle",
+        "label": "Block Title",
+        "value": "",
+        "description": "Optional heading for the Links block"
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "label": "Style",
+        "options": [
+          { "name": "Highlight", "value": "highlight" },
+          { "name": "Light Background", "value": "bg-light" },
+          { "name": "Dark Background", "value": "bg-dark" },
+          { "name": "Accent Background", "value": "bg-accent" }
+        ]
+      }
+    ]
   }
 ]

@@ -17,7 +17,8 @@
       "columns",
       "fragment",
       "sticky-bar",
-      "icon-text"
+      "icon-text",
+      "links"
     ]
   },
   {
@@ -52,6 +53,12 @@
   },
   {
     "id": "icon-text",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "links",
     "components": [
       "card"
     ]
