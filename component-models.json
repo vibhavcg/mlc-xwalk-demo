@@ -379,9 +379,7 @@
       {
         "component": "text",
         "name": "blockTitle",
-        "label": "Block Title",
-        "value": "",
-        "description": "Optional heading for the Links block"
+        "label": "Block Title"
       },
       {
         "component": "multiselect",
