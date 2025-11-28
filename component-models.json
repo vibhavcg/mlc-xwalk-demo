@@ -304,22 +304,7 @@
   },
   {
     "id": "sticky-bar",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Sticky Bar Text column 1",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "text2",
-        "value": "",
-        "label": "Sticky Bar Text column 2",
-        "valueType": "string"
-      }
-    ]
+    "fields": []
   },
   {
     "id": "icon-text",
