@@ -18,7 +18,8 @@
       "fragment",
       "sticky-bar",
       "icon-text",
-      "links"
+      "links",
+      "single-column"
     ]
   },
   {
@@ -65,5 +66,13 @@
       "hero",
       "icon-text"
     ]
+  },
+  {
+    "id": "single-column",
+    "components": [
+        "text", 
+        "title", 
+        "richtext"
+      ]
   }
 ]

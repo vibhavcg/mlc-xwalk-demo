@@ -165,10 +165,10 @@
       }
     ]
   },
+  {
+    "id": "cards",
+    "fields": [
       {
-      "id": "cards",
-      "fields": [
-        {
         "component": "select",
         "name": "classes",
         "value": "",
@@ -193,9 +193,9 @@
             "value": "important-updates"
           }
         ]
-        }
-      ]
-    },
+      }
+    ]
+  },
   {
     "id": "card",
     "fields": [
@@ -232,7 +232,7 @@
         "value": "",
         "label": "Rows"
       },
-        {
+      {
         "component": "select",
         "name": "classes",
         "value": "",
@@ -253,7 +253,7 @@
             "value": "bg-blue"
           }
         ]
-        }
+      }
     ]
   },
   {
@@ -385,6 +385,42 @@
           { "name": "Light Background", "value": "bg-light" },
           { "name": "Dark Background", "value": "bg-dark" },
           { "name": "Accent Background", "value": "bg-accent" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "single-column",
+    "fields": [
+      {
+        "component": "text",
+        "name": "blockTitle",
+        "label": "Block Title",
+        "value": "",
+        "description": "Optional heading for the single column block"
+      },
+      {
+        "component": "repeatable",
+        "name": "items",
+        "label": "Text Items",
+        "fields": [
+          {
+            "component": "text",
+            "name": "textItem",
+            "label": "Text",
+            "valueType": "string",
+            "description": "Enter text content for this item"
+          },
+          {
+            "component": "multiselect",
+            "name": "classes",
+            "label": "Style",
+            "options": [
+              { "name": "Highlight", "value": "highlight" },
+              { "name": "Muted", "value": "muted" },
+              { "name": "Bold", "value": "bold" }
+            ]
+          }
         ]
       }
     ]
