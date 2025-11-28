@@ -77,18 +77,6 @@
               ]
             }
           ]
-        },
-        {
-          "component": "select",
-          "name": "filter",
-          "label": "Filter by Category",
-          "valueType": "string",
-          "options": [
-            { "name": "All", "value": "all" },
-            { "name": "General", "value": "general" },
-            { "name": "Features", "value": "features" },
-            { "name": "Benefits", "value": "benefits" }
-          ]
         }
       ]
     }
@@ -97,11 +85,7 @@
     {
       "id": "icon-text",
       "components": [
-        "text",
-        "image",
-        "hero",
-        "button",
-        "title"
+        "card"
       ]
     }
   ]

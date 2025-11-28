@@ -53,11 +53,7 @@
   {
     "id": "icon-text",
     "components": [
-      "text",
-      "image",
-      "hero",
-      "button",
-      "title"
+      "card"
     ]
   }
 ]
