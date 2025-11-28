@@ -27,10 +27,10 @@
     {
       "id": "sticky-bar",
       "components": [
-        "text",
-        "image",
-        "button",
-        "title"
+        "text", 
+        "title", 
+        "columns",
+        "richtext"
       ]
     }
   ]
