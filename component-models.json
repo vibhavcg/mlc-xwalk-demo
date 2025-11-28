@@ -267,6 +267,16 @@
     ]
   },
   {
+    "id": "text",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Text"
+      }
+    ]
+  },
+  {
     "id": "hero",
     "fields": [
       {
