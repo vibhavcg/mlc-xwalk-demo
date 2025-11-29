@@ -31,22 +31,25 @@
 
 /* Mobile Responsive Styles */
 @media (width <= 768px) {
-    .columns.image-text-col > div {
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 24px;
-    }
+  /* General columns rule first */
+  .columns > div {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
 
-    .columns.image-text-col * {
-        text-align: left;
-        font-size: 15px;
-    }
+  /* More specific: image-text-col children */
+  .columns.image-text-col > div {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 24px;
+  }
 
-    .columns > div {
-        flex-direction: column;
-        gap: 20px;
-        align-items: stretch;
-    }
+  /* Most specific: all descendants of image-text-col */
+  .columns.image-text-col * {
+    text-align: left;
+    font-size: 15px;
+  }
 }
 
 @media (width >= 900px) {

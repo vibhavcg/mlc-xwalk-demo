@@ -20,7 +20,6 @@
         #da1710 112.37%
     );
     background-clip: text;
-    background-clip: text;
     color: transparent;
 }
 
@@ -83,9 +82,7 @@
     padding-bottom: 30px;
 }
 
-.cards-card-body h1,
-.cards-card-body h2,
-.cards-card-body h3 {
+.cards-card-body :is(h1, h2, h3) {
     color: black;
     font-size: 23px;
     width: 100%;
@@ -95,8 +92,7 @@
     margin-top: 10px;
 }
 
-.cards-card-body a,
-.cards-card-body .button {
+.cards-card-body :is(a, .button) {
     width: 100%;
     display: block;
     text-align: start;
@@ -125,6 +121,28 @@
     height: 200px;
     aspect-ratio: 4 / 3;
     object-fit: cover;
+}
+
+.cards.important-updates a:any-link{
+        color: #037691;
+}
+
+.image-top > ul li {
+    flex-direction: column !important;
+}
+
+.image-top > ul li img {
+    aspect-ratio: 1;
+    width: auto;   /* 'none' was invalid */
+    height: auto;
+}
+
+.image-top > ul li .cards-card-image {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    width: 100% !important;
+    height: auto;
 }
 
 .cards.horizontal {
@@ -210,27 +228,7 @@
     padding: 10px 20px;
 }
 
-.cards.important-updates a:any-link {
-    color: #037691;
-}
-
-.image-top > ul li {
-    flex-direction: column !important;
-
-    .cards-card-image{
-        display: flex;
-        justify-content: center !important;
-        align-items: center;
-        width: 100% !important;
-        height: auto;
-    }
-
-    img {
-        aspect-ratio: 1;
-        width: none;
-        height: auto;
-    }
-}
+/* moved .cards.important-updates a and .image-top rules earlier to avoid descending specificity */
 
 /* Mobile Responsive Styles */
 @media (width <= 768px) {
