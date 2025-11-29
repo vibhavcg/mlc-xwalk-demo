@@ -12,6 +12,7 @@
         position: relative;
         aspect-ratio: 4/3; /* Maintain aspect ratio */
     }
+
     .hero-overlay {
         position: absolute;
         display: flex;
@@ -37,11 +38,13 @@
                 color: #fff6de !important;
             }
         }
+
         p {
             font-size: 14px;
             font-weight: 400;
         }
     }
+
     .button-container {
         a {
             border-radius: 100px;
@@ -51,15 +54,17 @@
             padding: 12px 30px;
             margin-bottom: 10px;
         }
+
         a:hover {
             background-color: var( --button-hover-color);
         }
     }
 }
+
  .hero-wrapper:has(.hero-full) {
         /* margin: 0;
         padding: 0; */
-        border-radius: 0px !important;
+        border-radius: 0 !important;
         text-align: left;
 
         img{
@@ -75,6 +80,7 @@
                 font-size: 24px;
                 line-height: 1.25;
             }
+
             p {
                 font-size: 16px;
                 font-weight: 300;
@@ -82,38 +88,42 @@
         }
     }
 
-@media (min-width: 724px) and (max-width: 1023px) {
+@media (width >= 724px) and (width <= 1023px) {
     .hero-banner-block img {
         max-height: 350px;
         border-radius: 16px;
     }
+
     .hero-banner-block .hero-overlay {
         max-width: 50%;
         font-size: 18px;
         margin: 1.5rem;
     }
+
     .hero-banner-block .hero-overlay h1,
     .hero-banner-block .hero-overlay h2,
     .hero-banner-block .hero-overlay h3,
     .hero-banner-block .hero-overlay h4 {
         font-size: 32px;
     }
+
     .hero-banner-block .hero-overlay p {
         font-size: 18px;
     }
 }
 
-@media (min-width: 1024px) {
-
+@media (width >= 1024px) {
     .hero-banner-block img {
         max-height: 470px;
         border-radius: 20px;
     }
+
     .hero-banner-block .hero-overlay {
         max-width: 50%;
         font-size: 20px;
         margin: 4rem;
     }
+
     .hero-banner-block .hero-overlay h1,
     .hero-banner-block .hero-overlay h2,
     .hero-banner-block .hero-overlay h3,
@@ -124,16 +134,18 @@
         letter-spacing: -3.45px;
         font-weight: bold;
     }
+
     .hero-banner-block .hero-overlay p {
         font-size: 24px;
     }
+
     .hero-wrapper:has(.hero-full) {
       .hero-overlay {
-         
           h1,h2,h3,h4 {
               font-size: 40px;
               line-height: 1.25;
           }
+
           p {
               font-size: 24px;
           }

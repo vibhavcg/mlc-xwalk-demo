@@ -4,8 +4,8 @@ header .nav-wrapper {
     width: 100%;
     z-index: 2;
     position: fixed;
-    border-bottom-color: rgb(222, 222, 225);
-    color:rgb(24, 27, 37);
+    border-bottom-color: rgb(222 222 225);
+    color:rgb(24 27 37);
 }
 
 header nav {
@@ -152,6 +152,7 @@ header nav .nav-brand {
         height: auto;
         display: inline-block;
     }
+
     .icon-westpac-logo::after {
         content: " ";
         display: block;
@@ -292,6 +293,7 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
     grid-area: tools;
+
     .default-content-wrapper {
         display: flex;
         align-items: center;

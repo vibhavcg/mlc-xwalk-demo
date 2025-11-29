@@ -23,14 +23,14 @@
     --link-hover-color: #1d3ecf;
     --button-color: #fead1e;
     --button-hover-color: #ea9501;
-    --button-secondary-color: #ffffff;
-    --button-secondary-hover-color: rgba(37,40,40,.1);
+    --button-secondary-color: #fff;
+    --button-secondary-hover-color: rgb(37 40 40 / 10%);
 
     /* fonts */
-    --body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    --body-font-family: -apple-system, blinkmacsystemfont, "Segoe UI", "Roboto",
         "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
         "Helvetica Neue", sans-serif;
-    --heading-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    --heading-font-family: -apple-system, blinkmacsystemfont, "Segoe UI",
         "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
         "Helvetica Neue", sans-serif;
 
@@ -129,18 +129,23 @@ h6 {
 h1 {
     font-size: var(--heading-font-size-xxl);
 }
+
 h2 {
     font-size: var(--heading-font-size-xl);
 }
+
 h3 {
     font-size: var(--heading-font-size-l);
 }
+
 h4 {
     font-size: var(--heading-font-size-m);
 }
+
 h5 {
     font-size: var(--heading-font-size-s);
 }
+
 h6 {
     font-size: var(--heading-font-size-xs);
 }
@@ -225,7 +230,7 @@ button:focus {
 }
 
 /* Mobile Responsive Styles */
-@media (max-width: 768px) {
+@media (width <= 768px) {
     a.button:any-link,
     button {
         font-size: 15px;
@@ -235,6 +240,7 @@ button:focus {
         width: 100%;
         margin: 10px 0;
     }
+
     a.button.secondary,
     button.secondary {
         font-size: 15px;
@@ -256,6 +262,7 @@ button.secondary {
     border: 2px solid var(--text-color);
     color: var(--text-color);
 }
+
 a.button.secondary:hover,
 button.secondary:hover {
     background-color: var(--button-secondary-hover-color);
@@ -314,6 +321,7 @@ main .section.highlight {
     margin: 0;
     padding: 40px 0;
 }
+
 main .section.light,
 main .section.light-gray {
     background-color: var(--mlc-light-gray);
@@ -335,6 +343,7 @@ main .section.light-pink {
         text-align: center;
     }
 }
+
 .centeralign p {
   text-align: center;
 }

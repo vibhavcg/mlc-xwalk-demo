@@ -5,7 +5,6 @@
     justify-content: flex-start;
     flex: 1 1 auto;
     font-size: 16px;
-
     border-bottom: 1px solid #ccc;
 
     .button:any-link,
@@ -14,6 +13,7 @@
         color: black;
         white-space: wrap;
     }
+
     .button:any-link:hover,
     a:any-link:hover {
         border: 0;
@@ -42,7 +42,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (width >= 768px) {
     .links {
         flex-direction: row;
         font-size: 16px;
@@ -54,6 +54,7 @@
             margin-bottom: 20px;
             flex-direction: row;
         }
+
         a:any-link::before {
             content: "\203A";
             color: red;
@@ -61,6 +62,7 @@
             font-size: 1.2rem;
         }
     }
+
     .links a:any-link {
         font-size: 16px;
     }

@@ -310,13 +310,6 @@
     "id": "icon-text",
     "fields": [
       {
-        "component": "text",
-        "name": "blockTitle",
-        "label": "Block Title",
-        "value": "",
-        "description": "Optional heading for the Icon Text block"
-      },
-      {
         "component": "multiselect",
         "name": "classes",
         "label": "Style",

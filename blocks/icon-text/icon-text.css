@@ -10,6 +10,7 @@
         font-size: larger;
         font-weight: 500;
     }
+
     p{
         font-size: medium;
         text-align: center;
@@ -20,11 +21,13 @@
     a:any-link{
         color: #037691;
     }
+
     a:any-link:hover{
         text-decoration: underline;
         border-bottom: none;
     }
 }
+
 .icon-text > div{
     display: flex;
         flex-direction: column;
@@ -38,17 +41,19 @@
 }
 
 /* Mobile Responsive Styles */
-@media (max-width: 768px) {
+@media (width <= 768px) {
     .icon-text {
         flex-direction: column;
         gap: 12px;
         margin: 20px auto;
         align-items: center;
     }
+
     .icon-text > div {
         width: 100%;
         padding: 0 8px;
     }
+
     .icon-text h1,
     .icon-text h2,
     .icon-text h3 {
@@ -56,6 +61,7 @@
         padding-bottom: 8px;
         text-align: center;
     }
+
     .icon-text p {
         font-size: 15px;
         padding: 0 10px;
