@@ -2,7 +2,7 @@ import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 // media query match that indicates mobile/tablet width
-const isDesktop = window.matchMedia('(min-width: 900px)');
+const isDesktop = window.matchMedia('(min-width: 2400px)');
 
 function closeOnEscape(e) {
   if (e.code === 'Escape') {
@@ -16,7 +16,9 @@ function closeOnEscape(e) {
     } else if (!isDesktop.matches) {
       // eslint-disable-next-line no-use-before-define
       toggleMenu(nav, navSections);
-      nav.querySelector('button').focus();
+      // ensure we focus the hamburger toggle (not other buttons such as brand)
+      const hamburgerButton = nav.querySelector('.nav-hamburger button');
+      if (hamburgerButton) hamburgerButton.focus();
     }
   }
 }
@@ -119,7 +121,7 @@ export default async function decorate(block) {
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
-  const classes = ['brand', 'sections', 'tools'];
+  const classes = ['sections', 'brand', 'tools'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
     if (section) section.classList.add(`nav-${c}`);
@@ -153,7 +155,18 @@ export default async function decorate(block) {
       <span class="nav-hamburger-icon"></span>
     </button>`;
   hamburger.addEventListener('click', () => toggleMenu(nav, navSections));
-  nav.prepend(hamburger);
+  // prefer inserting the hamburger after the brand element so hamburger appears after
+  // the brand icon; fall back to prepend if the brand node isn't present
+  try {
+    if (navBrand && typeof navBrand.after === 'function') {
+      navBrand.after(hamburger);
+    } else {
+      nav.prepend(hamburger);
+    }
+  } catch (e) {
+    // defensive fallback for environments where .after might not be supported
+    nav.prepend(hamburger);
+  }
   nav.setAttribute('aria-expanded', 'false');
   // prevent mobile nav behavior on window resize
   toggleMenu(nav, navSections, isDesktop.matches);
